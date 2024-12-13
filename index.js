@@ -251,7 +251,7 @@ export default class Pdf extends Component {
     };
 
     _downloadFile = async (source, cacheFile) => {
-
+        // I need to cancel the last task
         if (this.lastRNBFTask?.cancel) {
             this.lastRNBFTask.cancel(err => {
             });
